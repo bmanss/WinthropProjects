@@ -1,0 +1,2 @@
+This program will read in a text file line by line and sort those lines lexicographically. Each line is added to a linked list queue where the first 
+elements are compared and sorted until one queue contains the entire sorted elements. 
