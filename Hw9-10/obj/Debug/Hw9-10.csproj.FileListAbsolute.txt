@@ -1,0 +1,16 @@
+C:\Users\blake\source\repos\Hw9-10\Hw9-10\bin\Debug\Hw9-10.exe.config
+C:\Users\blake\source\repos\Hw9-10\Hw9-10\bin\Debug\Hw9-10.exe
+C:\Users\blake\source\repos\Hw9-10\Hw9-10\bin\Debug\Hw9-10.pdb
+C:\Users\blake\source\repos\Hw9-10\Hw9-10\obj\Debug\Hw9-10.csproj.AssemblyReference.cache
+C:\Users\blake\source\repos\Hw9-10\Hw9-10\obj\Debug\MainWindow.g.cs
+C:\Users\blake\source\repos\Hw9-10\Hw9-10\obj\Debug\App.g.cs
+C:\Users\blake\source\repos\Hw9-10\Hw9-10\obj\Debug\Hw9-10_MarkupCompile.cache
+C:\Users\blake\source\repos\Hw9-10\Hw9-10\obj\Debug\Hw9-10_MarkupCompile.lref
+C:\Users\blake\source\repos\Hw9-10\Hw9-10\obj\Debug\MainWindow.baml
+C:\Users\blake\source\repos\Hw9-10\Hw9-10\obj\Debug\Hw9-10.g.resources
+C:\Users\blake\source\repos\Hw9-10\Hw9-10\obj\Debug\Hw9_10.Properties.Resources.resources
+C:\Users\blake\source\repos\Hw9-10\Hw9-10\obj\Debug\Hw9-10.csproj.GenerateResource.cache
+C:\Users\blake\source\repos\Hw9-10\Hw9-10\obj\Debug\Hw9-10.csproj.CoreCompileInputs.cache
+C:\Users\blake\source\repos\Hw9-10\Hw9-10\obj\Debug\Hw9-10.exe
+C:\Users\blake\source\repos\Hw9-10\Hw9-10\obj\Debug\Hw9-10.pdb
+C:\Users\blake\source\repos\Hw9-10\Hw9-10\obj\Debug\Hw9-10.csproj.ResolveComReference.cache
