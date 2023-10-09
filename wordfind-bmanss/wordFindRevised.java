@@ -4,49 +4,13 @@ import java.io.*;
 public class wordFindRevised {
 
     // Determines if the word can be found at one of the cardinal directions
-    public static boolean verifyDirection(char[][] letters, String word, int xPos, int yPos, String direction) {
-        int xOffset = 0;
-        int yOffset = 0;
-
-        switch (direction) {
-            case "N":
-                yOffset = -1;
-                break;
-            case "NE":
-                yOffset = -1;
-                xOffset = 1;
-                break;
-            case "E":
-                xOffset = 1;
-                break;
-            case "SE":
-                yOffset = 1;
-                xOffset = 1;
-                break;
-            case "S":
-                yOffset = 1;
-                break;
-            case "SW":
-                yOffset = 1;
-                xOffset = -1;
-                break;
-            case "W":
-                xOffset = -1;
-                break;
-            case "NW":
-                yOffset = -1;
-                xOffset = -1;
-                break;
-            default:
-                break;
-        }
-
+    public static boolean verifyDirection(char[][] letters, String word, int xPos, int yPos, int xDirection, int yDirection) {
         for (char wordLetter : word.toCharArray()) {
             if (yPos < 0 || xPos < 0 || yPos >= letters.length || xPos >= letters[0].length|| wordLetter != letters[yPos][xPos]) {
                 return false;
             }
-            yPos += yOffset;
-            xPos += xOffset;
+            yPos += yDirection;
+            xPos += xDirection;
         }
         return true;
     }
@@ -59,35 +23,35 @@ public class wordFindRevised {
         
         while (row < rowLength) {
             // North
-            if (verifyDirection(letterGrid, word, col, row, "N")) {
+            if (verifyDirection(letterGrid, word, col, row, 0, -1)) {
                 return word + " was found starting at " + (row + 1) + "," + (col + 1) + " and orientated North\n";
             }
             // Northeast
-            if (verifyDirection(letterGrid, word, col, row, "NE")) {
+            if (verifyDirection(letterGrid, word, col, row, 1, -1)) {
                 return word + " was found starting at " + (row + 1) + "," + (col + 1) + " and orientated Northeast\n";
             }
             // east
-            if (verifyDirection(letterGrid, word, col, row, "E")) {
+            if (verifyDirection(letterGrid, word, col, row, 1, 0)) {
                 return word + " was found starting at " + (row + 1) + "," + (col + 1) + " and orientated East\n";
             }
             // southest
-            if (verifyDirection(letterGrid, word, col, row, "SE")) {
+            if (verifyDirection(letterGrid, word, col, row, 1, 1)) {
                 return word + " was found starting at " + (row + 1) + "," + (col + 1) + " and orientated Southeast\n";
             }
             // south
-            if (verifyDirection(letterGrid, word, col, row, "S")) {
+            if (verifyDirection(letterGrid, word, col, row, 0, 1)) {
                 return word + " was found starting at " + (row + 1) + "," + (col + 1) + " and orientated South\n";
             }
             // southwest
-            if (verifyDirection(letterGrid, word, col, row, "SW")) {
+            if (verifyDirection(letterGrid, word, col, row, 1, -1)) {
                 return word + " was found starting at " + (row + 1) + "," + (col + 1) + " and orientated Southwest\n";
             }
             // west
-            if (verifyDirection(letterGrid, word, col, row, "W")) {
+            if (verifyDirection(letterGrid, word, col, row, -1, 0)) {
                 return word + " was found starting at " + (row + 1) + "," + (col + 1) + " and orientated west\n";
             }
             // northwest
-            if (verifyDirection(letterGrid, word, col, row, "NW")) {
+            if (verifyDirection(letterGrid, word, col, row, -1, -1)) {
                 return word + " was found starting at " + (row + 1) + "," + (col + 1) + " and orientated Northwest\n";
             }
             col++;
